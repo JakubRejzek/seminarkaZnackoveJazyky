@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <?xml-stylesheet type="text/xsl" href="toHtml.xsl"?>
+   <vodacky_klub>
+        <zakladni_info>
+            <oteviraci_doby>
+                <oteviraci_doba>
+                    <den_obdobi>Pondělí</den_obdobi>
+                    <doba_od> 8:00</doba_od>
+                    <doba_do> 20:00</doba_do>
+                </oteviraci_doba>
+                <oteviraci_doba>
+                    <den_obdobi>Úterý</den_obdobi>
+                    <doba_od> 9:00</doba_od>
+                    <doba_do> 20:30</doba_do>
+                </oteviraci_doba>
+                <oteviraci_doba>
+                    <den_obdobi>Středa</den_obdobi>
+                    <doba_od> 6:30</doba_od>
+                    <doba_do> 18:45</doba_do>
+                </oteviraci_doba>
+                <oteviraci_doba>
+                    <den_obdobi>Čtvrtek</den_obdobi>
+                    <doba_od> Zavřeno</doba_od>
+                    <doba_do> Zavřeno</doba_do>
+                </oteviraci_doba>
+                <oteviraci_doba>
+                    <den_obdobi>Pátek</den_obdobi>
+                    <doba_od> 8:00</doba_od>
+                    <doba_do> 22:00</doba_do>
+                </oteviraci_doba>
+                <oteviraci_doba>
+                    <den_obdobi>Sobota</den_obdobi>
+                    <doba_od> 9:00</doba_od>
+                    <doba_do> 21:00</doba_do>
+                </oteviraci_doba>
+                <oteviraci_doba>
+                    <den_obdobi>Neděle</den_obdobi>
+                    <doba_od> 10:00</doba_od>
+                    <doba_do> 22:00</doba_do>
+                </oteviraci_doba>
+                <oteviraci_doba>
+                    <den_obdobi>Státní svátky</den_obdobi>
+                    <doba_od> 11:00</doba_od>
+                    <doba_do> 15:00</doba_do>
+                </oteviraci_doba>
+                <oteviraci_doba>
+                    <den_obdobi>Mimo sezónu (20.10 až 20.2.)</den_obdobi>
+                    <doba_od> 8:00</doba_od>
+                    <doba_do> 22:00</doba_do>
+                </oteviraci_doba>
+            </oteviraci_doby>
+            <kontakt>
+                <telefon>227 213 214</telefon>
+                <mail>golflode@gmail.com</mail>
+                <adresa_prodejny>U Golfu 565, 100 00 Praha 10-Horní Měcholupy</adresa_prodejny>
+            </kontakt>
+        </zakladni_info>
+        <personal>
+            <zamestnanec id="1">
+                <jmeno> Daniel Peterka </jmeno>
+                <telefon>722 119 016</telefon>
+                <mail>peterkova1980@bing.com</mail>
+                <funkce>řidič</funkce>
+                <pracovni_dny pocet_dnu="5">po, út, stř, čtv, pa</pracovni_dny>
+            </zamestnanec>
+            <zamestnanec id="2">
+                <jmeno> Michaela Peterková </jmeno>
+                <telefon>729 814 621</telefon>
+                <mail>peterkova1980@bing.com</mail>
+                <funkce>pokladni</funkce>
+                <pracovni_dny pocet_dnu="5"> Stř, čtv, pa, so, ne</pracovni_dny>
+            </zamestnanec>
+            <zamestnanec id="3">
+                <jmeno> Dana Michrová </jmeno>
+                <telefon>791 328 924</telefon>
+                <mail>idaMichrova@seznam.cz</mail>
+                <funkce>pokladni</funkce>
+                <pracovni_dny pocet_dnu="2"> po, út</pracovni_dny>
+            </zamestnanec>
+            <zamestnanec id="4">
+                <jmeno> Martin Dobrodar</jmeno>
+                <telefon>729 814 016</telefon>
+                <mail>martinaDobrodarova2009@seznam.cz</mail>
+                <funkce>řidič</funkce>
+                <pracovni_dny pocet_dnu="2">so, ne</pracovni_dny>
+            </zamestnanec>
+        </personal>
+        <lode>
+            <typ_lode id="K1">
+                <jmeno typ="kajak">Wider boy - sport</jmeno>
+                <nosnost jednotka="kg">80</nosnost>
+                <pocet_mist>1</pocet_mist>
+                <doporucena_vyska>160-180</doporucena_vyska>
+                <pocet_dostupnych>9</pocet_dostupnych>
+                <pocet_obsazenych>1</pocet_obsazenych>
+                <cena jednotka="kč za den">300</cena>
+            </typ_lode>
+            <typ_lode id="K2">
+                <jmeno typ="kajak">Wider boy - basic</jmeno>
+                <nosnost jednotka="kg">150</nosnost>
+                <pocet_mist>1</pocet_mist>
+                <doporucena_vyska>150-180</doporucena_vyska>
+                <pocet_dostupnych>6</pocet_dostupnych>
+                <pocet_obsazenych>3</pocet_obsazenych>
+                <cena jednotka="kč za den">220</cena>
+            </typ_lode>
+            <typ_lode id="K3">
+                <jmeno typ="kajak">Lovely girl - base</jmeno>
+                <nosnost jednotka="kg">120</nosnost>
+                <pocet_mist>1</pocet_mist>
+                <doporucena_vyska>150-170</doporucena_vyska>
+                <pocet_dostupnych>7</pocet_dostupnych>
+                <pocet_obsazenych>2</pocet_obsazenych>
+                <cena jednotka="kč za den">180</cena>
+            </typ_lode>
+            <typ_lode id="K4">
+                <jmeno typ="kajak">Lovely girl - base++</jmeno>
+                <nosnost jednotka="kg">220</nosnost>
+                <pocet_mist>1</pocet_mist>
+                <doporucena_vyska>140-180</doporucena_vyska>
+                <pocet_dostupnych>5</pocet_dostupnych>
+                <pocet_obsazenych>1</pocet_obsazenych>
+                <cena jednotka="kč za den">420</cena>
+            </typ_lode>
+            <typ_lode id="D1">
+                <jmeno typ="deblovka">Romantic trip - model A</jmeno>
+                <nosnost jednotka="kg">320</nosnost>
+                <pocet_mist>2</pocet_mist>
+                <doporucena_vyska>110-200</doporucena_vyska>
+                <pocet_dostupnych>24</pocet_dostupnych>
+                <pocet_obsazenych>9</pocet_obsazenych>
+                <cena jednotka="kč za den">320</cena>
+            </typ_lode>
+            <typ_lode id="D2">
+                <jmeno typ="deblovka">Romantic trip - model B</jmeno>
+                <nosnost jednotka="kg">430</nosnost>
+                <pocet_mist>2</pocet_mist>
+                <doporucena_vyska>110-200</doporucena_vyska>
+                <pocet_dostupnych>21</pocet_dostupnych>
+                <pocet_obsazenych>1</pocet_obsazenych>
+                <cena jednotka="kč za den">500</cena>
+            </typ_lode>
+            <typ_lode id="D3">
+                <jmeno typ="deblovka">Samba - classic</jmeno>
+                <nosnost jednotka="kg">280</nosnost>
+                <pocet_mist>2</pocet_mist>
+                <doporucena_vyska>110-200</doporucena_vyska>
+                <pocet_dostupnych>14</pocet_dostupnych>
+                <pocet_obsazenych>7</pocet_obsazenych>
+                <cena jednotka="kč za den">280</cena>
+            </typ_lode>
+            <typ_lode id="D4">
+                <jmeno typ="deblovka">Samba - extra buff</jmeno>
+                <nosnost jednotka="kg">480</nosnost>
+                <pocet_mist>3</pocet_mist>
+                <doporucena_vyska>80-200</doporucena_vyska>
+                <pocet_dostupnych>14</pocet_dostupnych>
+                <pocet_obsazenych>7</pocet_obsazenych>
+                <cena jednotka="kč za den">280</cena>
+            </typ_lode>
+            <typ_lode id="R1">
+                <jmeno typ="raft">The water tanker - basic</jmeno>
+                <nosnost jednotka="kg">1000</nosnost>
+                <pocet_mist>9</pocet_mist>
+                <doporucena_vyska>80-200</doporucena_vyska>
+                <pocet_dostupnych>19</pocet_dostupnych>
+                <pocet_obsazenych>2</pocet_obsazenych>
+                <cena jednotka="kč za den">1280</cena>
+            </typ_lode>
+            <typ_lode id="R2">
+                <jmeno typ="raft">The water tanker - slim</jmeno>
+                <nosnost jednotka="kg">720</nosnost>
+                <pocet_mist>6</pocet_mist>
+                <doporucena_vyska>80-200</doporucena_vyska>
+                <pocet_dostupnych>5</pocet_dostupnych>
+                <pocet_obsazenych>7</pocet_obsazenych>
+                <cena jednotka="kč za den">910</cena>
+            </typ_lode>
+            <typ_lode id="R3">
+                <jmeno typ="raft">WaterFire explorer</jmeno>
+                <nosnost jednotka="kg">790</nosnost>
+                <pocet_mist>7</pocet_mist>
+                <doporucena_vyska>110-200</doporucena_vyska>
+                <pocet_dostupnych>8</pocet_dostupnych>
+                <pocet_obsazenych>1</pocet_obsazenych>
+                <cena jednotka="kč za den">915</cena>
+            </typ_lode>
+            <typ_lode id="R4">
+                <jmeno typ="raft">Seafarer extreme - rows only</jmeno>
+                <nosnost jednotka="kg">790</nosnost>
+                <pocet_mist>12</pocet_mist>
+                <doporucena_vyska>150-200</doporucena_vyska>
+                <pocet_dostupnych>8</pocet_dostupnych>
+                <pocet_obsazenych>1</pocet_obsazenych>
+                <cena jednotka="kč za den">910</cena>
+            </typ_lode>
+        </lode>
+    </vodacky_klub>

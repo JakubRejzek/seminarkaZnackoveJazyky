@@ -1,0 +1,122 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="vodacky_klub">
+    <xs:complexType>
+    <xs:sequence>
+        <xs:element name="zakladni_info">
+            <xs:complexType>
+            <xs:sequence>
+                    <xs:element name="oteviraci_doby">
+                        <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="oteviraci_doba" maxOccurs="30" minOccurs="1">
+                                <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element type="xs:string" name="den_obdobi"/>
+                                    <xs:element type="xs:string" name="doba_od"/>
+                                    <xs:element type="xs:string" name="doba_do"/>
+                                </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="kontakt">
+                        <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="telefon"/>
+                            <xs:element ref="mail"/>
+                            <xs:element type="xs:string" name="adresa_prodejny"/>
+                        </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+            </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="personal">
+            <xs:complexType>
+            <xs:sequence>
+                    <xs:element name="zamestnanec" maxOccurs="unbounded" minOccurs="1">
+                        <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="jmeno"/>
+                            <xs:element ref="telefon"/>
+                            <xs:element ref="mail"/>
+                                <xs:element type="xs:string" name="funkce"/>
+                                <xs:element name="pracovni_dny">
+                                    <xs:complexType>
+                                        <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                                <xs:attribute type="xs:positiveInteger" name="pocet_dnu" use="optional"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>        
+                                    </xs:complexType>
+                                </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:positiveInteger" name="id" use="optional"/>
+                        </xs:complexType>
+                    </xs:element>
+            </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="lode">
+            <xs:complexType>
+            <xs:sequence>
+                    <xs:element name="typ_lode" maxOccurs="unbounded" minOccurs="1">
+                        <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="jmeno">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute type="xs:string" name="typ"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>        
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="nosnost">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:positiveInteger">
+                                            <xs:attribute type="xs:string" name="jednotka"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>        
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="pocet_mist"/>
+                            <xs:element type="xs:string" name="doporucena_vyska"/>
+                            <xs:element type="xs:integer" name="pocet_dostupnych"/>
+                            <xs:element type="xs:integer" name="pocet_obsazenych"/>
+                            <xs:element name="cena">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:positiveInteger">
+                                            <xs:attribute type="xs:string" name="jednotka"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>        
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="id"/>
+                        </xs:complexType>
+                    </xs:element>
+            </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="telefon">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(\+[0-9][0-9][0-9] )?([0-9])([0-9])([0-9]) ([0-9])([0-9])([0-9]) ([0-9])([0-9])([0-9])"/>
+        </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="mail">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^\.]+\..+"/>
+        </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+</xs:schema>
